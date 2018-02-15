@@ -1,0 +1,14 @@
+.SearchInput {
+  width: 100%;
+  padding: 15px;
+  font-size: inherit;
+  font-weight: 600;
+  box-shadow: 0 0 2px 1px #000;
+  border: none;
+  border-radius: 2px;
+}
+
+.SearchInput:focus {
+  outline: none;
+  box-shadow: 0 0 2px 1px #06f;
+}

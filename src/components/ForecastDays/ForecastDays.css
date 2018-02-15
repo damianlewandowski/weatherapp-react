@@ -1,0 +1,54 @@
+.ForecastDays {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ForecastDays li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3px;
+
+  font-weight: 500;  
+  width: 70px;
+  height: 70px;
+  border: 1px solid #a9a9a9;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ForecastDays li:not(.active):hover {
+  box-shadow: 1px 0 2px #62c3fa, 0 1px 2px #62c3fa, -1px 0 2px #62c3fa, 0 -1px 2px #62c3fa;
+}
+
+.ForecastDays .active {
+  box-shadow: 1px 0 2px #039cf3, 0 1px 2px #039cf3, -1px 0 2px #039cf3, 0 -1px 2px #039cf3;
+}
+
+@media only screen and (min-width: 768px) {
+  .ForecastDays {
+    margin-bottom: 20px;
+  }
+
+  .ForecastDays li {
+    border: 2px solid #a9a9a9;
+    margin: 5px;
+  }
+
+  .ForecastDays .active {
+    box-shadow: 2px 0 2px #039cf3, 0 2px 2px #039cf3, -2px 0 2px #039cf3, 0 -2px 2px #039cf3;
+  }
+
+  .ForecastDays li {
+    font-size: 1.7rem;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .ForecastDays {
+    margin-top: 20px;
+  }
+}

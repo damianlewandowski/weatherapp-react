@@ -1,0 +1,56 @@
+.SearchForm {
+  /* For hiding the component */
+  position: relative;
+  left: 0;
+  opacity: 1;
+
+  display: flex;
+  width: 100%;
+
+  transition: all .32s ;
+}
+
+.SearchForm-hide {
+  transition: all .86s ease-in-out;
+  left: -500px;
+  transform: rotateX(270deg);
+  opacity: 0;
+}
+
+.SearchForm button {
+  padding: 15px;
+  background: #08f;
+  border: 1px solid #06f;
+  color: white;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.SearchForm button:hover {
+  background: #06f;
+}
+
+@media only screen and (min-width: 767px) {
+  .SearchForm {
+    font-size: 1.5rem;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .SearchForm {
+    font-size: 2rem;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .SearchForm {
+    font-size: 2rem;
+    width: 25%;
+  }
+
+  .SearchForm-active {
+    width: 35%;
+  }
+}

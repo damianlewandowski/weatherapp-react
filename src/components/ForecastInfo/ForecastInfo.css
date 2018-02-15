@@ -1,0 +1,42 @@
+.ForecastInfo li:not(:first-child) {
+  margin-top: 3px;
+}
+
+.ForecastInfo li {
+  padding-left: 10px;
+}
+
+.ForecastInfo-header {
+  display: flex;
+  align-items: center;
+}
+
+.ForecastInfo-header h4 {
+  text-transform: capitalize;
+}
+
+.ForecastInfo-time {
+  text-align: center;
+}
+
+.ForecastInfo i {
+  width: 20px;
+  margin-right: 6px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .ForecastInfo {
+    font-size: 2rem;
+  }
+
+  .ForecastInfo i {
+    margin-right: 26px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .ForecastInfo {
+    font-size: 1.6rem;
+  }
+}

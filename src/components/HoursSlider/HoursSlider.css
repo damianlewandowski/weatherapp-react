@@ -1,0 +1,70 @@
+.HoursSlider {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+.slider:focus {
+  outline: none;
+}
+
+.slider::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #b2b2b2;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #999;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #099;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-top: -8px;
+  cursor: pointer;
+}
+
+/* ul of hours */
+.hours {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 4px;
+}
+
+.hours:focus {
+  outline: none;
+}
+
+.hours li {
+  cursor: pointer;
+}
+
+.hours li:focus {
+  outline: none;
+}
+
+.hours .active {
+  color: #069;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 768px) {
+  .slider::-webkit-slider-thumb {
+    width: 40px;
+    height: 40px;
+    margin-top: -18px;
+  }
+
+  .hours {
+    font-size: 2rem;
+    margin-top: 10px;
+  }
+}
