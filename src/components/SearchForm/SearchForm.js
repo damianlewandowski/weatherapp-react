@@ -34,9 +34,8 @@ class SearchForm extends Component {
     // Make api call to openweathermap.org and get forecast for next 5 days every 3 hour
     getWeather(clearedInput)
       .then((res) => {
-        console.log("Response:",res);
-        let weatherObj = res.data;
-
+        console.log("THERE IS THE RESPONSE:", res);
+        const weatherObj = res.data;
         // Deepen array and organize forecasts by day
         weatherObj.list = weatherObj.list.reduce((acc, next, i) => {
           // Each forecast item has specific date in following format: "yyyy-mm-dd hh:00:00"
@@ -63,11 +62,11 @@ class SearchForm extends Component {
         // Hide SearchInput component
         this.setState({ hideFormFlag: true })
         this.props.updateForecast(weatherObj);
-      });
-    
 
-    // Don't render ForecastList immediately after submit
-    setTimeout(this.props.hideForm, 1000);
+
+        // Don't render ForecastList immediately after submit
+        setTimeout(this.props.hideForm, 1000);
+      })  
   }
 
   handleFocusChange() {

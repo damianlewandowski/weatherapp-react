@@ -7,7 +7,8 @@ function getWeather(cityCountry) {
   console.log(uri);
   const encodedURI = window.encodeURI(uri);
   
-  return axios.get(encodedURI)
+  return axios
+    .get(encodedURI)
 }
 
 export {getWeather};
