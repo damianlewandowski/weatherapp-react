@@ -13,7 +13,7 @@
 }
 
 .slider::-webkit-slider-runnable-track {
-  height: 4px;
+  height: 6px;
   background: #b2b2b2;
 }
 
@@ -24,10 +24,10 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   background: #099;
-  width: 20px;
-  height: 20px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  margin-top: -8px;
+  margin-top: -27px;
   cursor: pointer;
 }
 
@@ -36,7 +36,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin-top: 4px;
+  margin-top: 40px;
 }
 
 .hours:focus {
@@ -57,14 +57,8 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 }
 
 @media only screen and (min-width: 768px) {
-  .slider::-webkit-slider-thumb {
-    width: 40px;
-    height: 40px;
-    margin-top: -18px;
-  }
 
   .hours {
     font-size: 2rem;
-    margin-top: 10px;
   }
 }

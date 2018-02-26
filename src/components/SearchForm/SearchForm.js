@@ -34,7 +34,6 @@ class SearchForm extends Component {
     // Make api call to openweathermap.org and get forecast for next 5 days every 3 hour
     getWeather(clearedInput)
       .then((res) => {
-        console.log("THERE IS THE RESPONSE:", res);
         const weatherObj = res.data;
         // Deepen array and organize forecasts by day
         weatherObj.list = weatherObj.list.reduce((acc, next, i) => {

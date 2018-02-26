@@ -59,7 +59,7 @@ class WeatherForecast extends Component {
     const time = wholeDate[1].substring(0, 5);
 
     // For displaying temperature in ForecastHeader
-    const temp = this.state.currentDayForecast[this.state.currentHourIndex].main.temp;
+    const temp = this.state.currentDayForecast[this.state.currentHourIndex].main.temp.toFixed(1);
 
     // For displaying day names in ForecastDays component
     const dates = Object.keys(forecast.list).map((dayNum) => {
